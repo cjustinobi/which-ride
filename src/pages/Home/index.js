@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import { Animated } from 'react-animated-css'
 
 import why1 from '../../assets/img/why1.svg'
 import why2 from '../../assets/img/why2.png'
@@ -32,7 +33,7 @@ const Home = () => {
   }, [location])
 
   return (
-    <>
+    <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
       <Hero className="app-mx">
         <div>
           <h1>Compare & book <br/> ride-hailing providers </h1>
@@ -134,7 +135,7 @@ const Home = () => {
         </div>
       </Signup>
 
-    </>
+    </Animated>
 
   )
 }

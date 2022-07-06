@@ -1,5 +1,6 @@
-import {useLocation} from 'react-router-dom'
-import {useEffect} from 'react'
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Animated } from 'react-animated-css'
 
 
 const Contact = () => {
@@ -18,7 +19,9 @@ const Contact = () => {
   }, [location])
 
   return (
-    <div className="min-height">Contact page</div>
+    <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
+      <div className="min-height">Contact page</div>
+    </Animated>
   )
 }
 

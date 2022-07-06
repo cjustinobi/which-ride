@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
-
+import { Animated } from 'react-animated-css'
 
 const TheApp = () => {
   let location = useLocation()
@@ -18,7 +18,9 @@ const TheApp = () => {
   }, [location])
 
   return (
-    <div className="min-height">App page</div>
+    <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
+      <div className="min-height">App page</div>
+    </Animated>
   )
 }
 
