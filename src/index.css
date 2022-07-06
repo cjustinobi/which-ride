@@ -7,7 +7,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.4;
+  letter-spacing: 1.3px;
+}
+
+.hide {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.app-mx {
+  margin: 0 60px;
+}
+
+.min-height {
+  min-height: 100vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (max-width: 767px) {
+  .app-mx {
+    margin: 0 15px;
+  }
 }
