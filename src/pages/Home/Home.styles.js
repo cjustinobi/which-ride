@@ -77,9 +77,9 @@ export const Flow = styled.div`
 `
 
 export const Step = styled.div`
-  width: 3.3em;
-  height: 3.3em;
-  line-height: 3.3em;
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
   text-align: center;
   padding: 5px;
   font-size: 11px;
@@ -89,15 +89,62 @@ export const Step = styled.div`
 `
 
 export const WhyContainer = styled.div`
-  padding: 40px 0;
+  position: relative;
   h1 {
-    margin: 60px 0;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    //padding: 70px 0;
   }
   .why {
     display: grid;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
-    grid-gap: 70px;
+    justify-items: center;
+    
+    .why-right {
+      padding-top: 160px; 
+      padding-bottom: 80px; 
+      background: #E5E5E5;
+      div {
+        width: 40%;
+        padding-left: 80px;
+        padding-bottom: 40px;
+        
+        @media (max-width: 768px) {
+          width: 90%;
+          padding-left: 10px;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 20px;
+      }
+    }
+    
+    .why-left {
+      background: rgba(167, 146, 254, 0.07); 
+      padding-top: 160px; 
+      padding-bottom: 80px; 
+      div {
+        margin-left: auto;
+        margin-right: 0;
+        width: 40%;
+        padding-right: 70px;
+        padding-bottom: 40px;
+        
+        @media (max-width: 768px) {
+          width: 90%;
+          padding-right: 10px;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        padding-bottom: 20px;
+      }
+    }
     
       @media (max-width: 768px) {
         display: grid;
@@ -108,10 +155,6 @@ export const WhyContainer = styled.div`
           height: auto;
         }
       }  
-  }
-  
-  @media (max-width: 768px) {
-    padding: 40px 20px;
   }
   
 `
@@ -136,6 +179,10 @@ export const Signup = styled.div`
       ::placeholder {
         color: #fefefe;
       }
+    }
+    
+    input:focus {
+      border: 2px solid #fefefe;
     }
     
     button {

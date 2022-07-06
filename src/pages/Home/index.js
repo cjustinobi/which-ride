@@ -87,33 +87,37 @@ const Home = () => {
       <WhyContainer>
         <h1 className="text-center">Why Whichride</h1>
         <div className="why">
-          <div>
-            <img src={why1} alt="why whichride"/>
-            <h3>More Choices</h3>
-            <p>
-              WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
-            </p>
+          <div className="why-left">
+            <div>
+              <img src={why1} alt="why whichride"/>
+              <h3>More Choices</h3>
+              <p>
+                WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
+              </p>
+            </div>
+            <div>
+              <img src={why3} alt="why whichride"/>
+              <h3>More Choices</h3>
+              <p>
+                WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
+              </p>
+            </div>
           </div>
-          <div>
-            <img src={why2} alt="why whichride"/>
-            <h3>More Choices</h3>
-            <p>
-              WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
-            </p>
-          </div>
-          <div>
-            <img src={why3} alt="why whichride"/>
-            <h3>More Choices</h3>
-            <p>
-              WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
-            </p>
-          </div>
-          <div>
-            <img src={why4} alt="why whichride"/>
-            <h3>More Choices</h3>
-            <p>
-              WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
-            </p>
+          <div className="why-right">
+            <div>
+              <img src={why2} alt="why whichride"/>
+              <h3>More Choices</h3>
+              <p>
+                WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
+              </p>
+            </div>
+            <div>
+              <img src={why4} alt="why whichride"/>
+              <h3>Safety first</h3>
+              <p>
+                WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
+              </p>
+            </div>
           </div>
         </div>
       </WhyContainer>
