@@ -119,8 +119,7 @@ export const WhyContainer = styled.div`
       }
       
       @media (max-width: 768px) {
-        padding-top: 60px;
-        padding-bottom: 20px;
+        padding: 60px 0 20px 20px;
       }
     }
     
