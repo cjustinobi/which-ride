@@ -41,7 +41,7 @@ const AppHeader = ({ appLinks }) => {
         <div className="bar3"></div>
       </OpenMenu>
       <div id="hide-menu" onClick={hideMenu}>
-        cxc
+        ✖
       </div>
     </Header>
   )

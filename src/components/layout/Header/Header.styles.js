@@ -6,7 +6,9 @@ export const Header = styled.header`
   align-items: center;
   
   #hide-menu {
+    font-size: 40px;
     display: none;
+    cursor: pointer;
   }
   
   ul li {
@@ -23,7 +25,9 @@ export const Header = styled.header`
 `
 
 export const OpenMenu = styled.div` 
-display: none;
+  display: none;
+  cursor: pointer;
+  
   div {
     width: 35px;
     height: 5px;

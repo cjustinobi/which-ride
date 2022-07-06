@@ -24,7 +24,7 @@ const Home = () => {
             Think Compare the market but for taxis.
           </p>
         </div>
-        <img src={heroMap} alt="Map image"/>
+        <img src={heroMap} />
       </Hero>
       <Flow>
         <div className="flow-text">
@@ -35,7 +35,7 @@ const Home = () => {
           </p>
         </div>
         <div className="flow-details">
-          <img src={phone} alt="image of a phone with map"/>
+          <img src={phone} />
           <div>
             <div className="steps">
               <Step color="#F2C94C">Step 1</Step>
