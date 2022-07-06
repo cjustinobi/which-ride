@@ -16,6 +16,11 @@ export const Header = styled.header`
     margin: 0 20px;
   }
   
+   ul li a{
+    font-weight: 900;
+    color: #111;
+  }
+  
    @media screen and (max-width: 767px) {
      ul {
       display: none;
